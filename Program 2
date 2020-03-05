@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	int x, y;
+	cout << "Enter two numbers: ";
+	cin >> x >> y;
+	cout << fixed;
+	cout << "First number in decimal: " << x << " in hex " << hex << x << endl;
+	cout << "Second number in hex " << y << " in dec " << dec << y << endl;
+	cout << "The sum is: "			<< setw(16) << setprecision(2) << x + y <<
+			    "\nThe difference is: " << setw(9) << setprecision(2) << x - y <<
+			    "\nThe product is: "	<< setw(12) << setprecision(2) << x / y <<
+			    "\nThe quotient is: "	<< setw(11) << setprecision(2) << x % y;
+
+	return 0;
+}
